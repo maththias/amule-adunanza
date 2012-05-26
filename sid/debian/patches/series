@@ -1,0 +1,4 @@
+configure_ignore_gdlib-config_garbage.diff
+cas_configfile.c_good_default_paths.diff
+ftbfs_gcc45.diff
+libupnp-fix-publisherurl.diff

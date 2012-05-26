@@ -1,0 +1,4 @@
+?package(amule-adunanza):needs="X11" section="Applications/Network/File Transfer"\
+  title="amule-adunanza" command="/usr/bin/amule-adunanza"\
+  icon="/usr/share/pixmaps/amule.xpm"
+

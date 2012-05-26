@@ -1,0 +1,11 @@
+--- amule-adunanza-2011.1b1+2.2.6.orig/src/utils/wxCas/src/wxcasframe.cpp	2011-02-16 22:47:35.000000000 +0100
++++ amule-adunanza-2011.1b1+2.2.6/src/utils/wxCas/src/wxcasframe.cpp	2011-05-29 14:52:35.851870242 +0200
+@@ -303,7 +303,7 @@ WxCasFrame::GetStatImage () const
+ #ifdef __WXMSW__
+ 
+ 	memdc.
+-	SetFont ( wxFont::wxFont ( 6, wxSWISS, wxNORMAL, wxBOLD ) );
++	SetFont ( wxFont ( 6, wxSWISS, wxNORMAL, wxBOLD ) );
+ #else
+ // ADUNANZA BEGIN
+ // Fix per compilazioe su Fedora (segnalazione di laforge)

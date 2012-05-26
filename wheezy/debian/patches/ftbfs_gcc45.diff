@@ -1,0 +1,16 @@
+--- amule-adunanza-2010.1+2.2.6.orig/src/utils/wxCas/src/wxcasframe.cpp
++++ amule-adunanza-2010.1+2.2.6/src/utils/wxCas/src/wxcasframe.cpp
+@@ -303,11 +303,11 @@
+ #ifdef __WXMSW__
+ 
+ 	memdc.
+-	SetFont ( wxFont::wxFont ( 6, wxSWISS, wxNORMAL, wxBOLD ) );
++	SetFont ( wxFont ( 6, wxSWISS, wxNORMAL, wxBOLD ) );
+ #else
+ 
+ 	memdc.
+-	SetFont ( wxFont::wxFont ( 8, wxSWISS, wxNORMAL, wxBOLD ) );
++	SetFont ( wxFont ( 8, wxSWISS, wxNORMAL, wxBOLD ) );
+ #endif
+ 
+ 	memdc.

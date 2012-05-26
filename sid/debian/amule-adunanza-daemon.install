@@ -1,0 +1,4 @@
+usr/bin/amuled
+usr/bin/amuleweb
+usr/share/amuleadunanza/webserver
+../../debian/amuled_home_wrapper.sh	/usr/share/amule

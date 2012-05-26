@@ -1,0 +1,116 @@
+amule-adunanza (2011.1b1+2.2.6-1experimental1) experimental; urgency=medium
+
+  * Fix dependency libupnp
+    - from libupnp3 to libupnp6
+  
+  * Update to rev.11 debian ubuntu motu folder
+    - Remove unused libreadline5-dev build-dependency   
+
+  * Minor fixes 
+
+ -- Mattia Tavernini <tavernini.mattia@gmail.com>  Fri, 25 May 2012 07:11:33 +0200
+
+amule-adunanza (2011.1b1+2.2.6-1experimental0) experimental; urgency=low
+
+  * Added "patch" folder to debian: includes all ubuntu/launchpad patches
+    - configure_ignore_gdlib-config_garbage.diff
+    - cas_configfile.c_good_default_paths.diff
+    - ftbfs_gcc45.diff (modified for experimental revision)
+
+  * [Fabrice Coutadeur]
+     - debian/control: added b-d on autopoint to have intl support and fix FTBFS
+     because of missing locale directory (LP: #749150)
+
+   * [Matthias Klose]
+     - Fix FTBFS with gcc-4.5.
+
+ -- Mattia Tavernini <maathias@interfree.it>  Sun, 29 May 2011 15:03:34 +0200
+
+amule-adunanza (2011.1b1+2.2.6-0experimental2) experimental; urgency=medium
+  
+  * Fix dependence libcrypto++
+    - from libcrypto++8 to libcrypto++9
+  * Added geoip-database in "Depends" section of amule-adunanza-utils-gui package
+    - fix "Error Opening file /usr/share/GeoIP/GeoIP.dat" if someone download only daemon+remote gui without monolithic package)
+    - tnx to Mirko Pagliai for alerting us ;)
+
+ -- Mattia Tavernini <maathias@interfree.it>  Mon, 28 Mar 2011 16:41:40 +0200
+
+amule-adunanza (2011.1b1+2.2.6-0experimental1) experimental; urgency=low
+
+  * Merge with mrhyde_again rev.288
+  * Fix some typo in debian/control
+  * Remove not official skins
+
+ -- Mattia Tavernini <maathias@interfree.it>  Sat, 19 Feb 2011 16:17:58 +0100
+
+amule-adunanza (2010.2b1+2.2.6-0experimental3) experimental; urgency=low
+
+  * Fixed man menus ('-adunanza' suffix)
+  * Fixed scripts in /debian
+
+ -- Mattia Tavernini <maathias@interfree.it>  Mon, 12 Apr 2010 17:59:12 +0200
+
+amule-adunanza (2010.2b1+2.2.6-0experimental2) experimental; urgency=low
+
+  * Put '-adunanza' suffix on all binaries to permit the co-installation of amule and amule-adunanza
+  * Change all *desktop files for the same reason as upon
+  * Insert more skins (downloaded from gnome-look and deviantart)
+
+ -- Mattia Tavernini <maathias@interfree.it>  Sun, 11 Apr 2010 15:17:34 +0200
+
+amule-adunanza (2010.1+2.2.6-0unstable1) unstable; urgency=low
+
+  * New package form
+    - Debian folder downloaded from launchpad (debianized by Motu ubuntu)
+    - Daemon/gui/utils-gui now packaged separately from main binary (amule-adunanza itself)
+
+  * New upstream release (LP: #524697)
+    - Drop manpages_spelling_fixes.diff fixed by upstream
+    - Drop cryptopp-reference.diff fixed by upstream
+    - Bump Standards-Version no changes required
+    - Update install files (amule -> amuleadunanza)
+    - debian/rules: amule.xpm -> amuleadunanza.xpm
+    - Add README.Debian
+
+ -- Mattia Tavernini <maathias@interfree.it>  Sun, 21 Feb 2010 10:55:12 +0100
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu5) karmic; urgency=low
+
+  * Set Maintainer to Ubuntu MOTU Developers, real maintainer will be
+    Alessandro Scarozza from now on.
+  * Provide new amuleweb binary package (LP: #353667).
+  * Remove deprecated dh_desktop call.
+  * Bump Standards-Version to 3.8.2, no changes required.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sat, 20 Jun 2009 15:12:23 +0200
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu4) karmic; urgency=low
+
+  * Rebuild for libcrypto++7 -> libcrypto++8 transition.
+  * Add a patch to grep for Reference, since 'Reference Manual' no longer
+    appears in libcrypto++'s main header file any more.
+
+ -- Steve Kowalik <stevenk@ubuntu.com>  Sat, 13 Jun 2009 22:23:17 +1000
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu3) jaunty; urgency=low
+
+  * Build-depend on libupnp-dev, drop libupnp3 dependencies.
+  * Move recommended packages to Suggests.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Wed, 31 Dec 2008 16:09:21 +0100
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu2) jaunty; urgency=low
+
+  * debian/amule-adunanza-daemon.default
+    debian/amule-adunanza-daemon.init
+    debian/amuled_home_wrapper.sh:
+    - Replace amule-daemon with amule-adunanza-daemon.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 24 Nov 2008 23:21:14 +0100
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu1) jaunty; urgency=low
+
+  * Initial release (LP: #298365).
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sun, 16 Nov 2008 13:34:21 +0100
