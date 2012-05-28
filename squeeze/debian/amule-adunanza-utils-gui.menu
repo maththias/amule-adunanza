@@ -1,0 +1,12 @@
+?package(amule-adunanza-utils-gui):needs="X11" section="Applications/Network/File Transfer"\
+  title="aMule Adunanza Stats" command="/usr/bin/wxcas"\
+  icon="/usr/share/pixmaps/wxcas.xpm"
+
+?package(amule-adunanza-utils-gui):needs="X11" section="Applications/Network/File Transfer"\
+  title="aMule Adunanza Link Creator (alc)" command="/usr/bin/alc"\
+  icon="/usr/share/pixmaps/alc.xpm"
+
+?package(amule-adunanza-utils-gui):needs="X11" section="Applications/Network/File Transfer"\
+  title="aMule Adunanza GUI" command="/usr/bin/amulegui"\
+  icon="/usr/share/pixmaps/amulegui.xpm"
+

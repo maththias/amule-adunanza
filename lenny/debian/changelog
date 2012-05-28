@@ -1,0 +1,65 @@
+amule-adunanza (2010.1+2.2.6-0oldstable1) oldstable; urgency=low
+  
+  * Fix dependences/changelog for new debian stable release (squeeze 6.0)
+    - lenny -> oldstable
+    - squeeze -> stable
+    - wheezy -> testing
+    - sid -> unstable (as usual)
+
+ -- Mattia Tavernini <maathias@interfree.it>  Wed, 09 Feb 2011 17:47:59 +0100
+
+amule-adunanza (2010.1+2.2.6-0unstable1) unstable; urgency=low
+
+  * New package form
+    - Debian folder downloaded from launchpad (debianized by Motu ubuntu)
+    - Daemon/gui/utils-gui now packaged separately from main binary (amule-adunanza itself)
+
+  * New upstream release (LP: #524697)
+    - Drop manpages_spelling_fixes.diff fixed by upstream
+    - Drop cryptopp-reference.diff fixed by upstream
+    - Bump Standards-Version no changes required
+    - Update install files (amule -> amuleadunanza)
+    - debian/rules: amule.xpm -> amuleadunanza.xpm
+    - Add README.Debian
+
+ -- Mattia Tavernini <maathias@interfree.it>  Sun, 21 Feb 2010 10:55:12 +0100
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu5) karmic; urgency=low
+
+  * Set Maintainer to Ubuntu MOTU Developers, real maintainer will be
+    Alessandro Scarozza from now on.
+  * Provide new amuleweb binary package (LP: #353667).
+  * Remove deprecated dh_desktop call.
+  * Bump Standards-Version to 3.8.2, no changes required.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sat, 20 Jun 2009 15:12:23 +0200
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu4) karmic; urgency=low
+
+  * Rebuild for libcrypto++7 -> libcrypto++8 transition.
+  * Add a patch to grep for Reference, since 'Reference Manual' no longer
+    appears in libcrypto++'s main header file any more.
+
+ -- Steve Kowalik <stevenk@ubuntu.com>  Sat, 13 Jun 2009 22:23:17 +1000
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu3) jaunty; urgency=low
+
+  * Build-depend on libupnp-dev, drop libupnp3 dependencies.
+  * Move recommended packages to Suggests.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Wed, 31 Dec 2008 16:09:21 +0100
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu2) jaunty; urgency=low
+
+  * debian/amule-adunanza-daemon.default
+    debian/amule-adunanza-daemon.init
+    debian/amuled_home_wrapper.sh:
+    - Replace amule-daemon with amule-adunanza-daemon.
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Mon, 24 Nov 2008 23:21:14 +0100
+
+amule-adunanza (3.14b3+2.2.2-0ubuntu1) jaunty; urgency=low
+
+  * Initial release (LP: #298365).
+
+ -- Luca Falavigna <dktrkranz@ubuntu.com>  Sun, 16 Nov 2008 13:34:21 +0100

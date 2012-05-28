@@ -1,0 +1,8 @@
+amule-adunanza 2010.1-2.2.6
+---------------------------
+
+Since 3.14b4 version, the default configuration directory $HOME/.aMule is changed
+to $HOME/.aMuleAdunanzA. If you want keep your settings you should consider to
+rename $HOME/.aMule into $HOME/.aMuleAdunanzA
+
+ -- Mattia Tavernini <maathias@interfree.it>  Sun, 21 Feb 2010 10:55:12 +0100

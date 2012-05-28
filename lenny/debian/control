@@ -1,0 +1,84 @@
+Source: amule-adunanza
+Section: x11
+Priority: optional
+Maintainer: Mattia Tavernini <maathias@interfree.it>
+Build-Depends: autotools-dev, debhelper (>= 7), quilt, libglib2.0-dev, zlib1g-dev, libgd2-xpm-dev, libgeoip-dev, libpng12-dev, libreadline5-dev, libcrypto++-dev, libwxgtk2.8-dev, wx2.8-i18n, libupnp-dev, geoip-database
+Standards-Version: 3.7.3
+Homepage: https://sourceforge.net/projects/amule-adunanza/
+
+Package: amule-adunanza
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: amule-adunanza-utils, amule-adunanza-utils-gui
+Conflicts: amule, amule-common
+Description: client for the eD2k and Kadu networks for for Fastweb clients
+ aMule-AdunanzA is a peer-to-peer file sharing application, designed to connect
+ to the eDonkey and Kadu networks. It is specifically designed for systems
+ located behind Fastweb NAT network. It has a wide range of features,
+ including many of the original eMule and aMule client, like:
+ .
+  * online signature, source exchange, compressed transfers, secure
+    identification, and IP filter support
+  * boolean search, which can be local, global, or in the Kadu network
+  * checks against aggressive clients
+  * slot allocation, to decide the number of remote clients
+  * systray works well both in GNOME and KDE
+ .
+ A daemonized version of the application that does not need a graphic
+ environment to run is available in the amule-adunanza-daemon package, and
+ various utilities of interest can be found in the amule-adunanza-utils and
+ amule-adunanza-utils-gui packages, including the ed2k link handler.
+
+Package: amule-adunanza-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: amule-adunanza, ttf-dejavu-core
+Conflicts: amule-utils
+Description: utilities for aMule-AdunanzA (command-line version)
+ This package contains a set of command-line utilities related to
+ aMule-AdunanzA, the eD2k network client:
+ .
+  * ed2k: handles ed2k:// links, queueing them into aMule-AdunanzA
+  * cas: displays the contents of your aMule-AdunanzA online signature
+  * alcc: computes ed2k:// links for the given input files
+  * amulecmd: text-based client to control aMule-AdunanzA or its daemon
+ .
+ Some of these utilities have graphic versions, which can be found in
+ the amule-utils-gui package.
+
+Package: amule-adunanza-utils-gui
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: amule-adunanza
+Conflicts: amule-utils-gui
+Description: graphic utilities for aMule-AdunanzA
+ This package contains a set of graphic utilities related to aMule-AdunanzA,
+ the eD2k network client:
+ .
+  * wxcas: displays the contents of your aMule-AdunanzA online signature
+  * alc: computes ed2k:// links for the given input files
+  * amulegui (EXPERIMENTAL): graphic client to control aMule-AdunanzA or the
+    aMule-AdunanzA daemon
+ .
+ A command-line version of these utilities can be found in the
+ amule-utils package.
+
+Package: amule-adunanza-daemon
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: amule-adunanza-utils
+Conflicts: amule-daemon, amule-common
+Description: non-graphic version of aMule-AdunanzA, a client for the eD2k and
+ Kadu networks. This package contains a daemonized version of aMule-AdunanzA,
+ amuled, that does not need a graphic environment to run, and can run in the
+ background as well. It is normally used to be run in a machine 24/7, since the
+ application continues to run if the X11 session closes.
+ .
+ Included in the package is a webserver that provides an interface to control
+ the daemon. Remote connections are supported, and the daemon can be configured
+ to start the webserver automatically at startup. It is also possible to
+ control amuled via amulecmd, from the amule-utils package, and amulegui,
+ available in the amule-adunanza-utils-gui package. 
+ .
+ See the description of the amule package for a list of features, and
+ /usr/share/doc/amule-adunanza-daemon/README.Debian for some basic usage notes.
