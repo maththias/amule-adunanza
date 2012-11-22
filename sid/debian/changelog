@@ -1,3 +1,9 @@
+amule-adunanza (2012.1+2.3.1-0sid1) unstable; urgency=low
+
+  * New upstream release (SVN r10802 aligned)
+
+ -- Mattia Tavernini <tavernini.mattia@gmail.com>  Thu, 22 Nov 2012 10:22:20 +0100
+
 amule-adunanza (2010.1+2.2.6-1sid4) unstable; urgency=medium
   * Fix dependency libupnp
     - from libupnp3 to libupnp6
